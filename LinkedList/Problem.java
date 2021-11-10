@@ -41,10 +41,11 @@ public class Problem {
         System.out.println("\n");
     }
 
-    //problem solution function
+    //problem solution function --to remove the duplicates
     public void removeDuplicates(){
+        //store the head to a temporary node
         Node current = head;
-
+        //itrate using that temporary variable
         while(current != null){
             Node next = current.next;
             while(next != null && next.data == current.data){
